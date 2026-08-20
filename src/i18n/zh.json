@@ -12,7 +12,7 @@
     "evidence": "证据",
     "openSource": "开源",
     "services": "服务",
-    "order": "下单",
+    "order": "询价",
     "onepager": "一页摘要",
     "partners": "合作",
     "contact": "联系"
@@ -115,7 +115,7 @@
     ]
   },
   "order": {
-    "title": "下单",
+    "title": "询价",
     "intro": "告诉我们您的需求，我们回以范围、排期与验收标准。",
     "name": "姓名",
     "namePlaceholder": "您的姓名",
@@ -133,7 +133,7 @@
     "note": "提交即表示同意我们通过 Formspree 接收信息，仅用于回复您的需求。"
   },
   "onepager": {
-    "title": "一页摘要下载",
+    "title": "一页摘要",
     "intro": "把《AI 交付手册》浓缩成一页。留下邮箱，我们发给你 PDF 链接。",
     "emailLabel": "邮箱",
     "emailPlaceholder": "you@company.com",

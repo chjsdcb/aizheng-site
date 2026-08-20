@@ -1,0 +1,28 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section" id="evidence">
+  <h2>{t.evidence.title}</h2>
+  <p class="section-intro">{t.evidence.intro}</p>
+  <ul class="evidence-list">
+    {t.evidence.items.map((item: string) => (
+      <li>{item}</li>
+    ))}
+  </ul>
+  <div class="checklist">
+    <h3 class="checklist-title">{t.evidence.checklistTitle}</h3>
+    <ol class="checklist-steps">
+      {t.evidence.checklist.map((step: { code: string; label: string }) => (
+        <li>
+          <span class="chip-code">{step.code}</span>
+          <span>{step.label}</span>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

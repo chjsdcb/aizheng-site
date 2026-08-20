@@ -1,0 +1,178 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "meta": {
+    "title": "Aizheng — Humans Command AI. Acceptance is the final word.",
+    "description": "AI consulting & acceptance-based delivery for trade & manufacturing SMEs. 30 years foreign trade × 6 years AI full-stack, 210+ production deployments."
+  },
+  "siteTitle": "Aizheng.tech",
+  "navLabel": "Main navigation",
+  "nav": {
+    "credentials": "Credentials",
+    "evidence": "Evidence",
+    "openSource": "Open Source",
+    "services": "Services",
+    "order": "Order",
+    "onepager": "One-pager",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Humans command AI. Acceptance is the final word. / 人指挥 AI，验收说了算。"
+  },
+  "hero": {
+    "h1": "Humans command AI. Acceptance is the final word.",
+    "sub": "AI consulting & acceptance-based delivery for trade & manufacturing SMEs. 30 years foreign trade × 6 years AI full-stack, 210+ production deployments.",
+    "cta": "Book a 90-min Audit"
+  },
+  "credentials": {
+    "title": "Credentials",
+    "intro": "Measured in years, deployments, and pages — not promises.",
+    "stats": [
+      { "value": "30", "unit": "yrs", "label": "foreign trade" },
+      { "value": "6", "unit": "yrs", "label": "AI full-stack" },
+      { "value": "210+", "unit": "", "label": "production deployments" },
+      { "value": "174", "unit": "pages", "label": "AI Delivery Handbook" }
+    ],
+    "items": [
+      "30 yrs foreign trade",
+      "6 yrs AI full-stack",
+      "210+ production deployments: RAG customer support, smart quoting",
+      "174-page AI Delivery Handbook, blockchain timestamp-certified",
+      "Registered entity: Weihai Yunqi Zhichuang Technology"
+    ]
+  },
+  "evidence": {
+    "title": "Evidence",
+    "intro": "Registered, timestamped, and signed off — the receipts are public.",
+    "items": [
+      "Software copyright reg. No. 2026R11L1477838 (pending)",
+      "Work copyright reg. No. 2026Z11L0238541 (pending)",
+      "Blockchain timestamp certificate"
+    ],
+    "checklistTitle": "M0–M5 Acceptance Checklist",
+    "checklist": [
+      { "code": "M0", "label": "Scope freeze" },
+      { "code": "M1", "label": "Knowledge freeze" },
+      { "code": "M2", "label": "Guardrails: traceable citations + \"I don't know\" fallback" },
+      { "code": "M3", "label": "Pilot log" },
+      { "code": "M4", "label": "Signed metrics" },
+      { "code": "M5", "label": "Signed acceptance" }
+    ]
+  },
+  "openSource": {
+    "title": "Open Source",
+    "intro": "The delivery playbook and service framework are public — judge them yourself.",
+    "repos": [
+      {
+        "name": "ai-native-fullstack-engineer",
+        "description": "AI-native full-stack engineer handbook",
+        "url": "https://github.com/chjsdcb/ai-native-fullstack-engineer"
+      },
+      {
+        "name": "pioneer-ai-service-framework",
+        "description": "Pioneer AI service framework",
+        "url": "https://github.com/chjsdcb/pioneer-ai-service-framework"
+      }
+    ],
+    "view": "View on GitHub"
+  },
+  "services": {
+    "title": "Services",
+    "intro": "Fixed starting prices where possible. Every engagement ends with signed acceptance.",
+    "request": "Request",
+    "items": [
+      {
+        "title": "AI Deployment Audit",
+        "deliverable": "90-min remote + written M0–M5 gap report",
+        "price": "from ¥1,999 / $299"
+      },
+      {
+        "title": "Acceptance Clause Review",
+        "deliverable": "Written comments on AI contracts/checklists, 3 business days",
+        "price": "from ¥2,999 / $449"
+      },
+      {
+        "title": "On-prem RAG Delivery",
+        "deliverable": "Traceable citations + \"I don't know\" fallback",
+        "price": "Project quote"
+      },
+      {
+        "title": "Smart Quoting System",
+        "deliverable": "For trade SMEs",
+        "price": "Project quote"
+      },
+      {
+        "title": "Corporate AI In-house Training",
+        "deliverable": "On-site or remote, B2B only",
+        "price": "Per-day rate"
+      },
+      {
+        "title": "Licensing & Co-delivery",
+        "deliverable": "Partner framework",
+        "price": "Discussion"
+      }
+    ]
+  },
+  "order": {
+    "title": "Order",
+    "intro": "Tell us what you need. We reply with a scope, timeline, and acceptance criteria.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "company": "Company",
+    "companyPlaceholder": "Company name",
+    "contact": "Email or WeChat",
+    "contactPlaceholder": "you@company.com / WeChat ID",
+    "service": "Service",
+    "servicePlaceholder": "Select a service",
+    "need": "One-line need",
+    "needPlaceholder": "One line: project, timeline, goal",
+    "submit": "Submit request",
+    "subject": "New order request — aizheng.tech",
+    "sla": "Written reply within 24 hours.",
+    "note": "Submitting sends your details via Formspree. We only use them to reply to your request."
+  },
+  "onepager": {
+    "title": "One-pager download",
+    "intro": "The AI Delivery Handbook in one page. Enter your email and we'll send the PDF link.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@company.com",
+    "button": "Send me the one-pager",
+    "subject": "One-pager download request — aizheng.tech",
+    "tag": "one-pager",
+    "sla": "PDF link by email within 24h.",
+    "success": "Thank you! The PDF link is on its way to your inbox.",
+    "error": "Something went wrong. Please try again or email us directly."
+  },
+  "partners": {
+    "title": "Partners",
+    "intro": "A compliance-first co-delivery framework: paper-first, no verbal exclusivity.",
+    "phases": [
+      {
+        "code": "Phase 0",
+        "title": "Paper alignment",
+        "description": "Goals, scope, and acceptance criteria agreed on paper before any code."
+      },
+      {
+        "code": "Phase 1",
+        "title": "One lighthouse pilot co-delivered",
+        "description": "A single lighthouse pilot delivered together."
+      },
+      {
+        "code": "Phase 2",
+        "title": "Rollout",
+        "description": "Scale the proven result across the organization."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Prefer email. We answer within one business day.",
+    "emailLabel": "Email",
+    "email": "xjfc77@outlook.com",
+    "wechatLabel": "WeChat",
+    "wechat": "ww887788ww",
+    "linkedinLabel": "LinkedIn",
+    "linkedin": "https://www.linkedin.com/in/晓望-秦-682088118/"
+  }
+}

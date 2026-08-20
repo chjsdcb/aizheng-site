@@ -1,0 +1,27 @@
+---
+import Hero from './Hero.astro';
+import Credentials from './Credentials.astro';
+import Evidence from './Evidence.astro';
+import OpenSource from './OpenSource.astro';
+import Services from './Services.astro';
+import OrderForm from './OrderForm.astro';
+import OnePager from './OnePager.astro';
+import Partners from './Partners.astro';
+import Contact from './Contact.astro';
+
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<Hero t={t} />
+<Credentials t={t} />
+<Evidence t={t} />
+<OpenSource t={t} />
+<Services t={t} />
+<OrderForm t={t} />
+<OnePager t={t} />
+<Partners t={t} />
+<Contact t={t} />

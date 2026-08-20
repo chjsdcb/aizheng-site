@@ -1,0 +1,15 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="hero" id="home">
+  <h1>{t.hero.h1}</h1>
+  <p class="hero-sub">{t.hero.sub}</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="#services">{t.hero.cta}</a>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Home from '../../components/Home.astro';
+import zh from '../../i18n/zh.json';
+---
+
+<BaseLayout
+  title={zh.meta.title}
+  description={zh.meta.description}
+  t={zh}
+  locale="zh"
+>
+  <Home t={zh} />
+</BaseLayout>

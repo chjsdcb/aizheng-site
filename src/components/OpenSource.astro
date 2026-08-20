@@ -1,0 +1,21 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section" id="open-source">
+  <h2>{t.openSource.title}</h2>
+  <p class="section-intro">{t.openSource.intro}</p>
+  <div class="card-grid">
+    {t.openSource.repos.map((repo: { name: string; description: string; url: string }) => (
+      <a class="repo-card" href={repo.url} target="_blank" rel="noopener noreferrer">
+        <span class="repo-name">{repo.name}</span>
+        <span class="repo-desc">{repo.description}</span>
+        <span class="repo-link">{t.openSource.view} →</span>
+      </a>
+    ))}
+  </div>
+</section>

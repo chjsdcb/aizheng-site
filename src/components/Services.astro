@@ -1,0 +1,23 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section" id="services">
+  <h2>{t.services.title}</h2>
+  <p class="section-intro">{t.services.intro}</p>
+  <div class="card-grid">
+    {t.services.items.map((service: { title: string; deliverable: string; price: string }, index: number) => (
+      <article class="service-card">
+        <span class="service-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+        <h3>{service.title}</h3>
+        <p class="service-deliverable">{service.deliverable}</p>
+        <p class="service-price">{service.price}</p>
+        <a class="btn btn-ghost service-link" href="#order">{t.services.request}</a>
+      </article>
+    ))}
+  </div>
+</section>

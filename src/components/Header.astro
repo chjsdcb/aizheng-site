@@ -1,0 +1,38 @@
+---
+interface Props {
+  t: Record<string, any>;
+  locale: 'en' | 'zh';
+}
+
+const { t, locale } = Astro.props;
+const homeHref = locale === 'en' ? '/' : '/zh/';
+const nav = [
+  { id: 'credentials', label: t.nav.credentials },
+  { id: 'evidence', label: t.nav.evidence },
+  { id: 'open-source', label: t.nav.openSource },
+  { id: 'services', label: t.nav.services },
+  { id: 'order', label: t.nav.order },
+  { id: 'onepager', label: t.nav.onepager },
+  { id: 'partners', label: t.nav.partners },
+  { id: 'contact', label: t.nav.contact },
+];
+---
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href={homeHref} aria-label={t.siteTitle}>
+      <span class="brand-mark" aria-hidden="true">AI</span>
+      <span class="brand-name">{t.siteTitle}</span>
+    </a>
+    <nav aria-label={t.navLabel}>
+      {nav.map((item) => (
+        <a href={`#${item.id}`}>{item.label}</a>
+      ))}
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <a href="/" class={locale === 'en' ? 'active' : ''} hreflang="en">EN</a>
+      <span aria-hidden="true">/</span>
+      <a href="/zh/" class={locale === 'zh' ? 'active' : ''} hreflang="zh">中文</a>
+    </div>
+  </div>
+</header>

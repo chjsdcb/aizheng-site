@@ -1,0 +1,178 @@
+{
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "meta": {
+    "title": "云起智创 — 人指挥 AI，验收说了算",
+    "description": "AI 应用咨询与验收制交付，服务贸易与制造中小企业。30 年外贸 × 6 年 AI 全栈，210+ 生产部署。"
+  },
+  "siteTitle": "云起智创 · Aizheng.tech",
+  "navLabel": "主导航",
+  "nav": {
+    "credentials": "资历",
+    "evidence": "证据",
+    "openSource": "开源",
+    "services": "服务",
+    "order": "下单",
+    "onepager": "一页摘要",
+    "partners": "合作",
+    "contact": "联系"
+  },
+  "footer": {
+    "tagline": "Humans command AI. Acceptance is the final word. / 人指挥 AI，验收说了算。"
+  },
+  "hero": {
+    "h1": "人指挥 AI，验收说了算。",
+    "sub": "AI 应用咨询与验收制交付，服务贸易与制造中小企业。30 年外贸 × 6 年 AI 全栈，210+ 生产部署。",
+    "cta": "预约诊断（24h 书面回复）"
+  },
+  "credentials": {
+    "title": "资历",
+    "intro": "用年限、部署数、页数说话，而不是承诺。",
+    "stats": [
+      { "value": "30", "unit": "年", "label": "外贸" },
+      { "value": "6", "unit": "年", "label": "AI 全栈" },
+      { "value": "210+", "unit": "", "label": "生产部署" },
+      { "value": "174", "unit": "页", "label": "AI 交付手册" }
+    ],
+    "items": [
+      "30 年外贸",
+      "6 年 AI 全栈",
+      "210+ 生产部署：RAG 客服、智能报价",
+      "174 页 AI 交付手册，区块链时间戳存证",
+      "注册主体：威海云起智创科技"
+    ]
+  },
+  "evidence": {
+    "title": "证据",
+    "intro": "已登记、已存证、已签字——凭证公开可查。",
+    "items": [
+      "软著受理号 2026R11L1477838",
+      "作品受理号 2026Z11L0238541",
+      "区块链时间戳存证"
+    ],
+    "checklistTitle": "M0–M5 验收清单",
+    "checklist": [
+      { "code": "M0", "label": "范围冻结" },
+      { "code": "M1", "label": "知识冻结" },
+      { "code": "M2", "label": "护栏：溯源+「我不知道」兜底" },
+      { "code": "M3", "label": "试点日志" },
+      { "code": "M4", "label": "签字指标" },
+      { "code": "M5", "label": "签字验收" }
+    ]
+  },
+  "openSource": {
+    "title": "开源",
+    "intro": "交付方法论与服务框架全部开源，欢迎自行验证。",
+    "repos": [
+      {
+        "name": "ai-native-fullstack-engineer",
+        "description": "手册仓库",
+        "url": "https://github.com/chjsdcb/ai-native-fullstack-engineer"
+      },
+      {
+        "name": "pioneer-ai-service-framework",
+        "description": "Pioneer AI 服务框架",
+        "url": "https://github.com/chjsdcb/pioneer-ai-service-framework"
+      }
+    ],
+    "view": "在 GitHub 查看"
+  },
+  "services": {
+    "title": "服务",
+    "intro": "能明码标价就明码标价，每一次交付都以签字验收收尾。",
+    "request": "询价",
+    "items": [
+      {
+        "title": "AI 部署诊断",
+        "deliverable": "90 分钟远程+书面差距报告",
+        "price": "¥1,999 / $299 起"
+      },
+      {
+        "title": "验收条款审计",
+        "deliverable": "合同与清单书面意见，3 个工作日",
+        "price": "¥2,999 / $449 起"
+      },
+      {
+        "title": "本地 RAG 交付",
+        "deliverable": "溯源+「我不知道」兜底",
+        "price": "报价制"
+      },
+      {
+        "title": "智能报价系统",
+        "deliverable": "面向外贸 SME",
+        "price": "报价制"
+      },
+      {
+        "title": "企业 AI 内训",
+        "deliverable": "上门或远程，仅企业内训",
+        "price": "按天费率"
+      },
+      {
+        "title": "授权与联合交付",
+        "deliverable": "伙伴框架",
+        "price": "框架谈"
+      }
+    ]
+  },
+  "order": {
+    "title": "下单",
+    "intro": "告诉我们您的需求，我们回以范围、排期与验收标准。",
+    "name": "姓名",
+    "namePlaceholder": "您的姓名",
+    "company": "公司",
+    "companyPlaceholder": "公司名称",
+    "contact": "邮箱或微信",
+    "contactPlaceholder": "you@company.com / 微信号",
+    "service": "服务类型",
+    "servicePlaceholder": "请选择服务",
+    "need": "一句话需求",
+    "needPlaceholder": "一句话：项目、时间、目标",
+    "submit": "提交需求",
+    "subject": "新订单需求 — aizheng.tech",
+    "sla": "24 小时内书面回复。",
+    "note": "提交即表示同意我们通过 Formspree 接收信息，仅用于回复您的需求。"
+  },
+  "onepager": {
+    "title": "一页摘要下载",
+    "intro": "把《AI 交付手册》浓缩成一页。留下邮箱，我们发给你 PDF 链接。",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "you@company.com",
+    "button": "发送一页摘要",
+    "subject": "一页摘要下载请求 — aizheng.tech",
+    "tag": "one-pager",
+    "sla": "24h 内邮件发送 PDF 链接。",
+    "success": "已收到！PDF 链接即将发送到您的邮箱。",
+    "error": "发送失败，请重试或直接邮件联系我们。"
+  },
+  "partners": {
+    "title": "合作",
+    "intro": "合规优先的联合交付框架：书面优先，口头排他不谈。",
+    "phases": [
+      {
+        "code": "阶段 0",
+        "title": "纸面对齐",
+        "description": "目标、范围、验收标准先落纸面，再动工。"
+      },
+      {
+        "code": "阶段 1",
+        "title": "共打一个灯塔单",
+        "description": "共同交付一个灯塔试点。"
+      },
+      {
+        "code": "阶段 2",
+        "title": "放量",
+        "description": "将验证成果规模化推广。"
+      }
+    ]
+  },
+  "contact": {
+    "title": "联系",
+    "intro": "优先邮件联系，一个工作日内回复。",
+    "emailLabel": "邮箱",
+    "email": "xjfc77@outlook.com",
+    "wechatLabel": "微信",
+    "wechat": "ww887788ww",
+    "linkedinLabel": "领英",
+    "linkedin": "https://www.linkedin.com/in/晓望-秦-682088118/"
+  }
+}

@@ -1,0 +1,38 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section" id="order">
+  <h2>{t.order.title}</h2>
+  <p class="section-intro">{t.order.intro}</p>
+  <form class="order-form" action="https://formspree.io/f/maewvqyb" method="POST">
+    <label for="order-name">{t.order.name}</label>
+    <input id="order-name" name="name" type="text" placeholder={t.order.namePlaceholder} required autocomplete="name" />
+
+    <label for="order-company">{t.order.company}</label>
+    <input id="order-company" name="company" type="text" placeholder={t.order.companyPlaceholder} autocomplete="organization" />
+
+    <label for="order-contact">{t.order.contact}</label>
+    <input id="order-contact" name="contact" type="text" placeholder={t.order.contactPlaceholder} required autocomplete="email" />
+
+    <label for="order-service">{t.order.service}</label>
+    <select id="order-service" name="service" required>
+      <option value="" disabled selected>{t.order.servicePlaceholder}</option>
+      {t.services.items.map((service: { title: string }) => (
+        <option value={service.title}>{service.title}</option>
+      ))}
+    </select>
+
+    <label for="order-need">{t.order.need}</label>
+    <input id="order-need" name="need" type="text" placeholder={t.order.needPlaceholder} required />
+
+    <input type="hidden" name="_subject" value={t.order.subject} />
+    <button class="btn btn-primary" type="submit">{t.order.submit}</button>
+  </form>
+  <p class="sla-note">{t.order.sla}</p>
+  <p class="form-note">{t.order.note}</p>
+</section>

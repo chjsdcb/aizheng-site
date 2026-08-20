@@ -1,0 +1,26 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section" id="contact">
+  <h2>{t.contact.title}</h2>
+  <p class="section-intro">{t.contact.intro}</p>
+  <ul class="contact-list">
+    <li>
+      <span class="contact-label">{t.contact.emailLabel}</span>
+      <a href={`mailto:${t.contact.email}`}>{t.contact.email}</a>
+    </li>
+    <li>
+      <span class="contact-label">{t.contact.wechatLabel}</span>
+      <span>{t.contact.wechat}</span>
+    </li>
+    <li>
+      <span class="contact-label">{t.contact.linkedinLabel}</span>
+      <a href={t.contact.linkedin} target="_blank" rel="noopener noreferrer">{t.contact.linkedin}</a>
+    </li>
+  </ul>
+</section>

@@ -12,4 +12,12 @@ const { t } = Astro.props;
   <div class="hero-actions">
     <a class="btn btn-primary" href="#services">{t.hero.cta}</a>
   </div>
+  <ul class="hero-anchors">
+    {t.hero.anchors.map((anchor: { label: string; value: string }) => (
+      <li>
+        <span class="anchor-label">{anchor.label}</span>
+        <span class="anchor-value">{anchor.value}</span>
+      </li>
+    ))}
+  </ul>
 </section>

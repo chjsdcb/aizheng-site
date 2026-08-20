@@ -1,0 +1,36 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section page-section" id="solutions">
+  <h2>{t.solutions.title}</h2>
+  <p class="section-intro">{t.solutions.intro}</p>
+  <div class="solution-grid">
+    {t.solutions.items.map((item: { name: string; pain: string; solution: string; deliverable: string; acceptance: string }) => (
+      <article class="solution-card">
+        <h3>{item.name}</h3>
+        <div class="solution-block">
+          <h4 class="solution-label">{t.solutions.painLabel}</h4>
+          <p>{item.pain}</p>
+        </div>
+        <div class="solution-block">
+          <h4 class="solution-label">{t.solutions.solutionLabel}</h4>
+          <p>{item.solution}</p>
+        </div>
+        <div class="solution-block">
+          <h4 class="solution-label">{t.solutions.deliverableLabel}</h4>
+          <p>{item.deliverable}</p>
+        </div>
+        <div class="solution-block">
+          <h4 class="solution-label">{t.solutions.acceptanceLabel}</h4>
+          <p>{item.acceptance}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+  <a class="btn btn-primary page-cta" href={t.solutions.ctaHref}>{t.solutions.cta}</a>
+</section>

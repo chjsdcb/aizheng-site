@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Framework from '../components/Framework.astro';
+import en from '../i18n/en.json';
+---
+
+<BaseLayout title={en.pages.framework.title} description={en.pages.framework.description} t={en} locale="en">
+  <Framework t={en} />
+</BaseLayout>

@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Works from '../../components/Works.astro';
+import zh from '../../i18n/zh.json';
+---
+
+<BaseLayout title={zh.pages.works.title} description={zh.pages.works.description} t={zh} locale="zh">
+  <Works t={zh} />
+</BaseLayout>

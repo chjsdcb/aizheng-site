@@ -1,0 +1,29 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section page-section" id="works">
+  <h2>{t.works.title}</h2>
+  <p class="section-intro">{t.works.intro}</p>
+  <a class="repo-card works-featured" href={t.works.framework.url} target="_blank" rel="noopener noreferrer">
+    <span class="repo-name">{t.works.framework.name}</span>
+    <span class="repo-desc">{t.works.framework.description}</span>
+    <span class="repo-link">{t.works.framework.cta} →</span>
+  </a>
+  <h3 class="works-subtitle">{t.works.practiceTitle}</h3>
+  <ul class="tag-list">
+    {t.works.practice.map((item: string) => (
+      <li class="tag">{item}</li>
+    ))}
+  </ul>
+  <h3 class="works-subtitle">{t.works.outcomesTitle}</h3>
+  <ul class="evidence-list">
+    {t.works.outcomes.map((item: string) => (
+      <li>{item}</li>
+    ))}
+  </ul>
+</section>

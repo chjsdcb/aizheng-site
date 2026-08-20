@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Works from '../components/Works.astro';
+import en from '../i18n/en.json';
+---
+
+<BaseLayout title={en.pages.works.title} description={en.pages.works.description} t={en} locale="en">
+  <Works t={en} />
+</BaseLayout>

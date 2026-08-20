@@ -1,0 +1,23 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section" id="method">
+  <h2>{t.method.title}</h2>
+  <p class="section-intro">{t.method.intro}</p>
+  <ol class="method-steps">
+    {t.method.steps.map((step: { code: string; label: string; description: string }) => (
+      <li>
+        <span class="chip-code">{step.code}</span>
+        <div class="method-body">
+          <h3 class="method-label">{step.label}</h3>
+          <p class="method-desc">{step.description}</p>
+        </div>
+      </li>
+    ))}
+  </ol>
+</section>

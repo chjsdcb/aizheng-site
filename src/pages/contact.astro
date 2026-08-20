@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Cooperation from '../components/Cooperation.astro';
+import en from '../i18n/en.json';
+---
+
+<BaseLayout title={en.pages.contact.title} description={en.pages.contact.description} t={en} locale="en">
+  <Cooperation t={en} />
+</BaseLayout>

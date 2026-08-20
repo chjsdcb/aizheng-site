@@ -13,12 +13,16 @@ interface Props {
 const { title, description, t, locale } = Astro.props;
 const site = Astro.site ?? new URL('https://aizheng.tech');
 const canonical = new URL(Astro.url.pathname, site).href;
-const enUrl = new URL('/', site).href;
-const zhUrl = new URL('/zh/', site).href;
+const path = Astro.url.pathname;
+const isZh = path === '/zh/' || path.startsWith('/zh/');
+const enPath = isZh ? path.replace(/^\/zh/, '') || '/' : path;
+const zhPath = isZh ? path : (path === '/' ? '/zh/' : '/zh' + path);
+const enUrl = new URL(enPath, site).href;
+const zhUrl = new URL(zhPath, site).href;
 ---
 
 <!doctype html>
-<html lang={locale}>
+<html lang={t.lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

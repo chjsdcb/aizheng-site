@@ -6,15 +6,18 @@ interface Props {
 
 const { t, locale } = Astro.props;
 const homeHref = locale === 'en' ? '/' : '/zh/';
+const langRoot = locale === 'en' ? '' : '/zh';
+const path = Astro.url.pathname;
+const isZh = path === '/zh/' || path.startsWith('/zh/');
+const enPath = isZh ? path.replace(/^\/zh/, '') || '/' : path;
+const zhPath = isZh ? path : (path === '/' ? '/zh/' : '/zh' + path);
 const nav = [
-  { id: 'credentials', label: t.nav.credentials },
-  { id: 'evidence', label: t.nav.evidence },
-  { id: 'open-source', label: t.nav.openSource },
-  { id: 'services', label: t.nav.services },
-  { id: 'order', label: t.nav.order },
-  { id: 'onepager', label: t.nav.onepager },
-  { id: 'partners', label: t.nav.partners },
-  { id: 'contact', label: t.nav.contact },
+  { label: t.nav.about, href: `${homeHref}#about` },
+  { label: t.nav.method, href: `${homeHref}#method` },
+  { label: t.nav.solutions, href: `${langRoot}/solutions` },
+  { label: t.nav.works, href: `${langRoot}/works` },
+  { label: t.nav.framework, href: `${langRoot}/framework` },
+  { label: t.nav.cooperation, href: `${langRoot}/contact` },
 ];
 ---
 
@@ -26,13 +29,13 @@ const nav = [
     </a>
     <nav aria-label={t.navLabel}>
       {nav.map((item) => (
-        <a href={`#${item.id}`}>{item.label}</a>
+        <a href={item.href}>{item.label}</a>
       ))}
     </nav>
     <div class="lang-switch" role="group" aria-label="Language">
-      <a href="/" class={locale === 'en' ? 'active' : ''} hreflang="en">EN</a>
+      <a href={enPath} class={!isZh ? 'active' : ''} hreflang="en">EN</a>
       <span aria-hidden="true">/</span>
-      <a href="/zh/" class={locale === 'zh' ? 'active' : ''} hreflang="zh">中文</a>
+      <a href={zhPath} class={isZh ? 'active' : ''} hreflang="zh">中文</a>
     </div>
   </div>
 </header>

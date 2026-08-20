@@ -2,13 +2,36 @@
   "lang": "en",
   "dir": "ltr",
   "meta": {
-    "title": "Aizheng — Humans Command AI. Acceptance is the final word.",
-    "description": "AI consulting & acceptance-based delivery for trade & manufacturing SMEs. 30 years foreign trade × 6 years AI full-stack, 210+ production deployments."
+    "title": "Aizheng — Turn business requirements into runnable AI systems",
+    "description": "Enterprise AI implementation for trade & manufacturing: turning business requirements into runnable, acceptance-signed AI systems. 30 years foreign trade, nearly 6 years AI full-stack practice."
   },
   "siteTitle": "Aizheng.tech",
+  "pages": {
+    "solutions": {
+      "title": "AI Solutions for Trade & Manufacturing — Aizheng",
+      "description": "Foreign trade AI assistant, enterprise knowledge base RAG, and AI business automation — with explicit pain points, deliverables, and acceptance criteria."
+    },
+    "works": {
+      "title": "Practice Works — Pioneer AI Framework & Public Engineering",
+      "description": "Public engineering work: Pioneer AI Framework, AI agent / RAG / SaaS / multi-tenant practice, and verifiable registrations. No invented case studies."
+    },
+    "framework": {
+      "title": "M0–M5 AI Delivery & Acceptance Framework",
+      "description": "The M0–M5 acceptance checklist: scope freeze, knowledge freeze, guardrails, pilot log, signed metrics, signed acceptance."
+    },
+    "contact": {
+      "title": "Cooperation — Low-risk, paper-first engagement",
+      "description": "Work with us through a low-risk flow: Phase 0 paper alignment, Phase 1 lighthouse pilot, Phase 2 rollout."
+    }
+  },
   "navLabel": "Main navigation",
   "nav": {
-    "credentials": "Credentials",
+    "about": "About",
+    "method": "Method",
+    "solutions": "Solutions",
+    "works": "Works",
+    "framework": "Framework",
+    "cooperation": "Cooperation",
     "evidence": "Evidence",
     "openSource": "Open Source",
     "services": "Services",
@@ -21,43 +44,110 @@
     "tagline": "Humans command AI. Acceptance is the final word. / 人指挥 AI，验收说了算。"
   },
   "hero": {
-    "h1": "Humans command AI. Acceptance is the final word.",
-    "sub": "AI consulting & acceptance-based delivery for trade & manufacturing SMEs. 30 years foreign trade × 6 years AI full-stack, 210+ production deployments.",
-    "cta": "Book a 90-min Audit"
-  },
-  "credentials": {
-    "title": "Credentials",
-    "intro": "Measured in years, deployments, and pages — not promises.",
-    "stats": [
-      { "value": "30", "unit": "yrs", "label": "foreign trade" },
-      { "value": "6", "unit": "yrs", "label": "AI full-stack" },
-      { "value": "210+", "unit": "", "label": "production deployments" },
-      { "value": "174", "unit": "pages", "label": "AI Delivery Handbook" }
-    ],
-    "items": [
-      "30 yrs foreign trade",
-      "6 yrs AI full-stack",
-      "210+ production deployments: RAG customer support, smart quoting",
-      "174-page AI Delivery Handbook, blockchain timestamp-certified",
-      "Registered entity: Weihai Yunqi Zhichuang Technology"
+    "h1": "Turn business requirements into runnable, acceptance-signed AI systems.",
+    "sub": "30 years of foreign trade × nearly 6 years of AI full-stack practice, delivered with the M0–M5 acceptance checklist.",
+    "cta": "Book a 90-min AI audit (written reply within 24h)",
+    "anchors": [
+      { "label": "Business", "value": "Trade & manufacturing" },
+      { "label": "AI engineering", "value": "Agent · RAG · SaaS · multi-tenant" },
+      { "label": "Acceptance", "value": "M0–M5 signed delivery" }
     ]
+  },
+  "about": {
+    "title": "About",
+    "role": "Enterprise AI implementation architect",
+    "tagline": "An AI engineering practitioner grown out of foreign trade.",
+    "story": "I spent 30 years in foreign trade, so I know how traditional businesses operate and where digital transformation hurts. For the past nearly six years I have worked full-stack on AI, independently building Pioneer AI Framework, with hands-on practice across AI agents, RAG, SaaS, and multi-tenant architecture.",
+    "not": "I am not a pure programmer, and I am not a trainer. I help businesses turn requirements into AI systems they can run, verify, and sign off.",
+    "stats": [
+      { "value": "30", "unit": "yrs", "label": "foreign trade experience" },
+      { "value": "6", "unit": "yrs", "label": "AI full-stack practice" },
+      { "value": "210+", "unit": "", "label": "AI deployment, verification & optimization practice records (personal projects)" }
+    ],
+    "asset": "Book: 《AI原生全栈工程师：30天从PRD到上线》 — AI Native Full-Stack Engineer: From PRD to Launch"
+  },
+  "method": {
+    "title": "Method",
+    "intro": "Every engagement follows one process: humans set the direction, AI does the work, and acceptance is the final word. Six checkpoints keep scope, knowledge, and risk under control.",
+    "steps": [
+      { "code": "M0", "label": "Scope freeze", "description": "Fix the goal and boundary on paper before any build." },
+      { "code": "M1", "label": "Knowledge freeze", "description": "Lock the knowledge base so outputs stay reproducible." },
+      { "code": "M2", "label": "Guardrails", "description": "Traceable citations plus a fallback: when the system does not know, it says so." },
+      { "code": "M3", "label": "Pilot log", "description": "Log every pilot run so decisions can be reviewed later." },
+      { "code": "M4", "label": "Signed metrics", "description": "Agree on the numbers before measuring, then sign the results." },
+      { "code": "M5", "label": "Signed acceptance", "description": "Ship only when the buyer signs off." }
+    ]
+  },
+  "solutions": {
+    "title": "AI Solutions",
+    "intro": "Three entry points for trade & manufacturing. Every solution states the pain point, the approach, what is delivered, and how it is accepted.",
+    "painLabel": "Pain point",
+    "solutionLabel": "Solution",
+    "deliverableLabel": "Deliverable",
+    "acceptanceLabel": "Acceptance criteria",
+    "cta": "Talk about your scenario",
+    "ctaHref": "/contact",
+    "items": [
+      {
+        "name": "Foreign Trade AI Assistant",
+        "pain": "Quoting and customer follow-up are slow, inconsistent, and hard to trace across a busy trade team.",
+        "solution": "An AI assistant that drafts and checks quotes and replies from your own price rules and product data, with citations back to the source.",
+        "deliverable": "A working assistant configured to your workflow, plus usage documentation.",
+        "acceptance": "It matches your quoting rules on a test set, every answer cites its source, and your team signs off on the pilot log."
+      },
+      {
+        "name": "Enterprise Knowledge Base RAG",
+        "pain": "Company knowledge sits in scattered files; staff cannot find answers quickly, and new hires take long to ramp up.",
+        "solution": "An on-premise RAG system that retrieves from your documents and answers with traceable citations and an \"I don't know\" fallback.",
+        "deliverable": "On-prem deployment, a knowledge ingestion pipeline, and a signed acceptance checklist.",
+        "acceptance": "Answers cite their sources; unsupported questions trigger the fallback; retrieval quality is measured and signed."
+      },
+      {
+        "name": "AI Business Automation",
+        "pain": "Repetitive, multi-step business processes eat staff time and are error-prone.",
+        "solution": "AI agents that automate one defined workflow with guardrails, logging, and human approval points.",
+        "deliverable": "Automation for one defined workflow, plus a pilot log and a rollback plan.",
+        "acceptance": "The workflow runs end-to-end in a pilot, every step is logged, and the owner signs the measured result."
+      }
+    ]
+  },
+  "works": {
+    "title": "Practice Works",
+    "intro": "Public engineering work — no invented client cases.",
+    "framework": {
+      "name": "Pioneer AI Framework",
+      "description": "An open service framework I built independently for building AI services, with acceptance in mind.",
+      "url": "https://github.com/chjsdcb/pioneer-ai-service-framework",
+      "cta": "View on GitHub"
+    },
+    "practiceTitle": "AI engineering practice",
+    "practice": ["AI Agent", "RAG", "SaaS", "Multi-tenant architecture", "System design", "Front-end & back-end", "Deployment"],
+    "outcomesTitle": "Public technical outcomes",
+    "outcomes": [
+      "Software copyright application No. 2026R11L1477838 (pending)",
+      "Work copyright application No. 2026Z11L0238541 (pending)",
+      "Book: 《AI原生全栈工程师：30天从PRD到上线》"
+    ]
+  },
+  "framework": {
+    "title": "M0–M5 AI Delivery & Acceptance Framework",
+    "principle": "人指挥 AI，验收说了算。",
+    "intro": "Humans set the direction, AI does the work, and acceptance is the final word. Six checkpoints turn that principle into a reviewable delivery process.",
+    "stepsTitle": "The six checkpoints",
+    "cta": "Start a low-risk pilot",
+    "ctaHref": "/contact"
+  },
+  "cooperation": {
+    "title": "Cooperation",
+    "intro": "A low-risk, paper-first engagement: written alignment first, no verbal exclusivity.",
+    "phasesTitle": "The flow"
   },
   "evidence": {
     "title": "Evidence",
-    "intro": "Registered, timestamped, and signed off — the receipts are public.",
+    "intro": "Public, verifiable registration records — no invented case studies.",
     "items": [
-      "Software copyright reg. No. 2026R11L1477838 (pending)",
-      "Work copyright reg. No. 2026Z11L0238541 (pending)",
-      "Blockchain timestamp certificate"
-    ],
-    "checklistTitle": "M0–M5 Acceptance Checklist",
-    "checklist": [
-      { "code": "M0", "label": "Scope freeze" },
-      { "code": "M1", "label": "Knowledge freeze" },
-      { "code": "M2", "label": "Guardrails: traceable citations + \"I don't know\" fallback" },
-      { "code": "M3", "label": "Pilot log" },
-      { "code": "M4", "label": "Signed metrics" },
-      { "code": "M5", "label": "Signed acceptance" }
+      "Software copyright application No. 2026R11L1477838 (pending)",
+      "Work copyright application No. 2026Z11L0238541 (pending)"
     ]
   },
   "openSource": {
@@ -82,36 +172,12 @@
     "intro": "Fixed starting prices where possible. Every engagement ends with signed acceptance.",
     "request": "Request",
     "items": [
-      {
-        "title": "AI Deployment Audit",
-        "deliverable": "90-min remote + written M0–M5 gap report",
-        "price": "from ¥1,999 / $299"
-      },
-      {
-        "title": "Acceptance Clause Review",
-        "deliverable": "Written comments on AI contracts/checklists, 3 business days",
-        "price": "from ¥2,999 / $449"
-      },
-      {
-        "title": "On-prem RAG Delivery",
-        "deliverable": "Traceable citations + \"I don't know\" fallback",
-        "price": "Project quote"
-      },
-      {
-        "title": "Smart Quoting System",
-        "deliverable": "For trade SMEs",
-        "price": "Project quote"
-      },
-      {
-        "title": "Corporate AI In-house Training",
-        "deliverable": "On-site or remote, B2B only",
-        "price": "Per-day rate"
-      },
-      {
-        "title": "Licensing & Co-delivery",
-        "deliverable": "Partner framework",
-        "price": "Discussion"
-      }
+      { "title": "AI Deployment Audit", "deliverable": "90-min remote + written M0–M5 gap report", "price": "from ¥1,999 / $299" },
+      { "title": "Acceptance Clause Review", "deliverable": "Written comments on AI contracts/checklists, 3 business days", "price": "from ¥2,999 / $449" },
+      { "title": "On-prem RAG Delivery", "deliverable": "Traceable citations + \"I don't know\" fallback", "price": "Project quote" },
+      { "title": "Smart Quoting System", "deliverable": "For trade SMEs", "price": "Project quote" },
+      { "title": "Corporate AI In-house Training", "deliverable": "On-site or remote, B2B only", "price": "Per-day rate" },
+      { "title": "Licensing & Co-delivery", "deliverable": "Partner framework", "price": "Discussion" }
     ]
   },
   "order": {
@@ -134,7 +200,7 @@
   },
   "onepager": {
     "title": "One-pager download",
-    "intro": "The AI Delivery Handbook in one page. Enter your email and we'll send the PDF link.",
+    "intro": "One page version of my delivery methodology. Enter your email and I'll send the PDF link.",
     "emailLabel": "Email",
     "emailPlaceholder": "you@company.com",
     "button": "Send me the one-pager",
@@ -148,21 +214,9 @@
     "title": "Partners",
     "intro": "A compliance-first co-delivery framework: paper-first, no verbal exclusivity.",
     "phases": [
-      {
-        "code": "Phase 0",
-        "title": "Paper alignment",
-        "description": "Goals, scope, and acceptance criteria agreed on paper before any code."
-      },
-      {
-        "code": "Phase 1",
-        "title": "One lighthouse pilot co-delivered",
-        "description": "A single lighthouse pilot delivered together."
-      },
-      {
-        "code": "Phase 2",
-        "title": "Rollout",
-        "description": "Scale the proven result across the organization."
-      }
+      { "code": "Phase 0", "title": "Paper alignment", "description": "Goals, scope, and acceptance criteria agreed on paper before any code." },
+      { "code": "Phase 1", "title": "One lighthouse pilot co-delivered", "description": "A single lighthouse pilot delivered together." },
+      { "code": "Phase 2", "title": "Rollout", "description": "Scale the proven result across the organization." }
     ]
   },
   "contact": {

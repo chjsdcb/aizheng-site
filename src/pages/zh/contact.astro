@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Cooperation from '../../components/Cooperation.astro';
+import zh from '../../i18n/zh.json';
+---
+
+<BaseLayout title={zh.pages.contact.title} description={zh.pages.contact.description} t={zh} locale="zh">
+  <Cooperation t={zh} />
+</BaseLayout>

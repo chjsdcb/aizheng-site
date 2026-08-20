@@ -1,0 +1,26 @@
+---
+interface Props {
+  t: Record<string, any>;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section page-section" id="framework">
+  <h2>{t.framework.title}</h2>
+  <p class="framework-principle">{t.framework.principle}</p>
+  <p class="section-intro">{t.framework.intro}</p>
+  <h3 class="framework-steps-title">{t.framework.stepsTitle}</h3>
+  <ol class="method-steps">
+    {t.method.steps.map((step: { code: string; label: string; description: string }) => (
+      <li>
+        <span class="chip-code">{step.code}</span>
+        <div class="method-body">
+          <h3 class="method-label">{step.label}</h3>
+          <p class="method-desc">{step.description}</p>
+        </div>
+      </li>
+    ))}
+  </ol>
+  <a class="btn btn-primary page-cta" href={t.framework.ctaHref}>{t.framework.cta}</a>
+</section>

@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Solutions from '../components/Solutions.astro';
+import en from '../i18n/en.json';
+---
+
+<BaseLayout title={en.pages.solutions.title} description={en.pages.solutions.description} t={en} locale="en">
+  <Solutions t={en} />
+</BaseLayout>

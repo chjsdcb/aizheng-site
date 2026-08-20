@@ -175,6 +175,36 @@ ol {
   gap: 0.75rem;
 }
 
+.hero-anchors {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  gap: 1rem;
+  margin-top: 2.25rem;
+  max-width: 48rem;
+}
+
+.hero-anchors li {
+  border-left: 2px solid var(--accent);
+  padding-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.anchor-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+.anchor-value {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
 /* ---------- Sections ---------- */
 
 .section {
@@ -288,7 +318,6 @@ ol {
 
 /* ---------- Lists ---------- */
 
-.credential-list,
 .evidence-list {
   list-style: none;
   display: grid;
@@ -296,7 +325,6 @@ ol {
   max-width: 50rem;
 }
 
-.credential-list li,
 .evidence-list li {
   display: flex;
   gap: 0.7rem;
@@ -307,37 +335,68 @@ ol {
   padding: 0.9rem 1rem;
 }
 
-.check {
-  color: var(--accent-strong);
+/* ---------- About ---------- */
+
+.about-role {
+  font-size: 1.05rem;
   font-weight: 700;
+  color: var(--accent-strong);
+  margin: -0.25rem 0 0.25rem;
 }
 
-/* ---------- Checklist ---------- */
-
-.checklist {
-  margin-top: 2rem;
+.about-story,
+.about-not {
+  max-width: 62ch;
+  color: var(--text-soft);
+  margin: 0 0 1rem;
 }
 
-.checklist-title {
-  font-size: 1rem;
-  margin-bottom: 0.75rem;
+.about-not {
+  color: var(--text);
+  border-left: 2px solid var(--accent);
+  padding-left: 0.75rem;
 }
 
-.checklist-steps {
+.about-asset {
+  max-width: 62ch;
+  margin: 1.5rem 0 0;
+  color: var(--text-soft);
+}
+
+/* ---------- Method ---------- */
+
+.method-steps {
   list-style: none;
   display: grid;
-  gap: 0.6rem;
+  gap: 0.7rem;
   max-width: 50rem;
 }
 
-.checklist-steps li {
+.method-steps li {
   display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
+  align-items: flex-start;
+  gap: 0.9rem;
   background: var(--bg-soft);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+
+.method-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.method-label {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.method-desc {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  margin: 0;
 }
 
 .chip-code {
@@ -345,6 +404,7 @@ ol {
   font-weight: 700;
   color: var(--accent-strong);
   min-width: 2.2rem;
+  padding-top: 0.15rem;
 }
 
 /* ---------- Cards ---------- */
@@ -629,4 +689,111 @@ textarea:focus-visible {
   .service-card {
     transition: none;
   }
+}
+
+/* ---------- Pages (V2) ---------- */
+
+.section.page-section {
+  border-top: none;
+  padding-top: 2.5rem;
+}
+
+.page-cta {
+  margin-top: 1.75rem;
+}
+
+/* Solutions */
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.solution-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  box-shadow: var(--shadow);
+}
+
+.solution-card h3 {
+  margin-bottom: 1rem;
+}
+
+.solution-block {
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.solution-block:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.solution-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+  margin: 0 0 0.3rem;
+}
+
+.solution-block p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+/* Works */
+
+.works-featured {
+  max-width: 50rem;
+  margin-bottom: 0.5rem;
+}
+
+.works-subtitle {
+  font-size: 1rem;
+  margin: 1.75rem 0 0.75rem;
+}
+
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  max-width: 50rem;
+}
+
+.tag {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+/* Framework */
+
+.framework-principle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent-strong);
+  margin: 0 0 1rem;
+}
+
+.framework-steps-title {
+  font-size: 1rem;
+  margin: 1.75rem 0 0.75rem;
+}
+
+/* Cooperation */
+
+.cooperation-subtitle {
+  font-size: 1rem;
+  margin: 2rem 0 0.75rem;
 }
